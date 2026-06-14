@@ -1,0 +1,145 @@
+.create-book-container {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f4f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-book-card {
+  width: min(1100px, 100%);
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 28px;
+}
+
+.create-book-card h1 {
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-placeholder {
+  width: 100%;
+  min-height: 420px;
+  border: 2px dashed #b7c2cc;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fdfdfd 0%, #eef2f5 100%);
+}
+
+.image-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dropdown,
+.description-box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  font: inherit;
+  background: #fff;
+}
+
+.dropdown {
+  min-height: 48px;
+  padding: 10px 14px;
+}
+
+.description-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.description-box {
+  min-height: 362px;
+  resize: none;
+  padding: 14px;
+  overflow-y: auto;
+}
+
+.bottom-section {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.bottom-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bottom-column input,
+.bottom-column select {
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.actions-row {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.create-button {
+  min-width: 220px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+.create-button:hover {
+  background: #f39c12;
+}
+
+@media (max-width: 900px) {
+  .top-section,
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    min-height: 300px;
+  }
+
+  .description-box {
+    min-height: 220px;
+  }
+}

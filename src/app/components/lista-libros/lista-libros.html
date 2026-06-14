@@ -1,0 +1,17 @@
+<div class="contenedor">
+<h1>Lista de libros</h1>
+
+<div class="grid-libros">
+    @for (libro of libros; track libro.titulo) {
+    <div class="card">
+        <img [src]="libro.imagen" alt="Libro">
+        <h3>{{ libro.titulo }}</h3>
+        <p>{{ libro.autor }}</p>
+<div class="precio">
+<strong>S/ {{ libro.precio }}</strong>
+</div>
+<button>Comprar</button>
+</div>
+    }
+</div>
+</div>

@@ -1,0 +1,14 @@
+<nav class="navbar">
+<h2>BookMarket</h2>
+<div class="navbar-links">
+    <a routerLink="/home">Inicio</a>
+    <a routerLink="/libros">Libros</a>
+    @if (role() === 'empleado' || role() === 'admin') {
+        <a routerLink="/gestion-libros">Gestionar Libros</a>
+    }
+    @if (role() === 'admin') {
+        <a routerLink="/gestionar-empleados">Gestionar Empleados</a>
+    }
+    <button type="button" (click)="salir()">Salir</button>
+</div>
+</nav>

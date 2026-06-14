@@ -1,0 +1,38 @@
+.navbar {
+background: #2c3e50;
+color: white;
+padding: 15px 35px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar-links {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.navbar a:hover {
+color: #f1c40f;
+}
+
+.navbar button {
+background: transparent;
+border: 0;
+color: white;
+font: inherit;
+font-weight: bold;
+cursor: pointer;
+padding: 0;
+}
+
+.navbar button:hover {
+color: #f1c40f;
+}

@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div class="login-card">
+    <h1>BookMarket</h1>
+    <p>Minimarket de libros online</p>
+
+    <input
+      type="text"
+      placeholder="Usuario"
+      [(ngModel)]="usuario">
+
+    <input
+      type="password"
+      placeholder="Contraseña"
+      [(ngModel)]="password">
+
+    <a routerLink="/crear-cuenta" class="crear-cuenta-link">Crear Cuenta</a>
+
+    <button (click)="ingresar()">Ingresar</button>
+  </div>
+</div>

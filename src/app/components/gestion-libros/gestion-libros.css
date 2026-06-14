@@ -1,0 +1,42 @@
+.manage-container {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f4f6f7;
+}
+
+.manage-card {
+	width: 350px;
+	padding: 30px;
+	border-radius: 15px;
+	background: white;
+	text-align: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.manage-card h1 {
+	margin-bottom: 10px;
+}
+
+.manage-actions {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.manage-actions button {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	background: #2c3e50;
+	color: white;
+	cursor: pointer;
+	font: inherit;
+}
+
+.manage-actions button:hover {
+	background: #f39c12;
+}
